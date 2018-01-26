@@ -1,0 +1,868 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+html, body {
+	height: 100%;
+}
+
+
+
+@font-face {
+    font-family: planewalker-regular;
+    src: url(http://localhost/wordpress/wp-content/themes/wpbootstrap/public/fonts/Planewalker.otf);
+
+}
+
+.btn-custom {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    border-radius: 0px !important;
+    background-color: #284553;
+    color: white;
+}
+
+/* Menu Bar */
+.navbar-custom {
+    background-color: #433220 !important;
+    border-color: #433220 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.nav a{
+    color: #BB8856 !important;
+}
+
+
+/* ----------------------------------- */
+
+/* Header Section */
+.top-div {
+	height: 100%;
+	background-image: url("public/img/slider-image.jpg");
+	background-attachment: scroll;
+	background-repeat: none;
+	background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover auto;
+    -o-background-size: cover;
+}
+
+.intro-logo {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+
+.intro-title {
+    padding-top: 10px;
+    font-size: 40px;
+    font-family: planewalker-regular;
+    color: white;
+
+}
+
+.intro-text {
+    color: white;
+}
+
+.div-video-header {
+    width: 100%;
+    height: auto;
+}
+
+
+.intro-video {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.intro-img-video {
+    width: 512px;
+    height: 258px;
+    border: 1px solid #BB8856;
+}
+
+/* ----------------------------------- */
+
+/* Middle Div*/
+
+.middle-div {
+	height: 100%;
+	background-image: url("public/img/image-background2.png");
+	background-repeat: none;
+	background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.box-info {
+    padding-top: 100px;
+    width: 80%;
+    height: 350px;
+    margin: auto !important;
+    overflow: hidden;
+}
+
+.box-info-left {
+    border-left: 1px solid #BB8856;
+    border-bottom: 1px solid #BB8856;
+    border-top: 1px solid #BB8856;
+    background-color: rgba(40, 69, 83, 0.7);
+    width: 50% !important;
+    height: 100%;
+}
+
+.box-info-left-title {
+    font-size: 30px;
+    font-family: planewalker-regular;
+    color: white;
+    padding-top: 50px;
+}
+
+.box-info-left-content {
+    font-size: 15px;
+    font-family: planewalker-regular;
+    color: white;
+    text-align: justify;
+}
+
+.box-info-img {
+    border-right: 1px solid #BB8856;
+    border-bottom: 1px solid #BB8856;
+    border-top: 1px solid #BB8856;
+    width: 100%;
+    height: 100%;
+}
+
+.box-info-right {
+    padding: 0 !important;
+    width: 50% !important;
+    height: 100%;
+}
+
+/* ----------------------------------- */
+
+/* News Section */ 
+.bottom-div {
+	background-color: #433220;
+	background-repeat: none;
+	background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    /*padding: 0;*/
+}
+
+.title-bottom {
+    font-size: 30px;
+    font-family: planewalker-regular;
+    color: white;
+    text-align: center;
+}
+
+.job-title {
+    text-align: center;
+}
+
+
+.news-title {
+    font-size: 20px;
+    font-family: planewalker-regular;
+    color: white; 
+}
+
+.news-content {
+    font-size: 15px;
+    color: white;
+    text-align: justify !important;
+}
+
+.news {
+    height: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.news-img {
+    border: 2px solid #BB8856;
+    width: 320px !important;
+    height: 160px !important
+}
+
+/* ----------------------------------- */
+
+/* Footer Section */
+.footer-div {
+	background: linear-gradient(#433220, black);
+	background-repeat: none;
+	background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.menu-footer {
+    text-align: center;
+    padding-top: 25px;
+    margin: auto;
+    width: 100%;
+}
+
+.menu-footer ul {
+    list-style: none;
+}
+
+.menu-footer ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu-footer ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-footer p {
+    color: white;
+    padding-top: 5px;
+}
+
+.menu-footer img {
+    padding: 10px;
+}
+
+/* ----------------------------------- */
+
+/* Middle Bar */
+.middle-bar {
+	background-color: #284553;
+    height: auto;
+}
+
+.title-bar-middle {
+    padding-top: 15px;
+    font-size: 30px;
+    color: white;
+    font-family: planewalker-regular;
+}
+
+.div-input {
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.input-bar-middle{
+    margin: 0;
+    padding: 3.5px;
+}
+
+.button-bar-middle {
+    margin: 0 !important;
+    border-radius: 0px !important;
+    background-color: #433220;
+    color: white;
+}
+
+/* Responsive Queries */
+
+/* ---------------Ipad-------------------- */
+
+@media only screen and (max-width: 768px){
+    
+    /* Header */
+    .intro-logo {
+        padding: 100px 40px 0px;
+        text-align: center;
+    }
+
+    .intro-video {
+        padding-top: 100px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+
+    /* Middle Bar Section */
+    .title-bar-middle {
+        text-align: center;
+    }
+
+    .button-bar-middle {
+        margin: 10px 0px 20px;
+    }
+
+    .news-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-info-left-content {
+        font-size: 13.5px;
+    }
+
+}
+
+/* ---------------Iphone 6plus or less------------------- */
+
+@media only screen and (max-width: 414px){
+    
+/* Header Div */    
+    .intro-video {
+        display: none;
+    }
+
+/*Middle Div*/
+
+    .box-info {
+        width: 100% !important;
+        height: 450px;
+        padding-top: 20px !important;
+    }
+
+    .box-info-left {
+        width: 100% !important;
+        height: 50%;
+        border-right: 1px solid #BB8856;
+    }
+
+    .box-info-right {
+        width: 100% !important;
+        height: 50%;
+    }
+
+    .box-info-left-title {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    .box-info-left-content {
+        font-size: 14px;
+    }
+
+    .box-info-img {
+        border-left: 1px solid #BB8856;
+    }
+
+/* News Section */
+
+    .news {
+        float: none !important;
+        margin: auto !important;
+        width: 300px !important;
+    }
+
+    .news-img {
+        width: 100% !important;
+        height: 100%;
+    }
+}
+
+
+/* ---------------About Page -------------------------------------- */
+
+/* ----------------------------------- */
+
+.about-intro-title {
+    padding-top: 200px;
+    font-size: 80px;
+    font-family: planewalker-regular;
+    color: white;
+
+}
+
+/* Header Section */
+.about-top-div {
+    height: 100%;
+    background-image: url("http://localhost/wordpress/wp-content/themes/wpbootstrap/public/img/about-background.png");
+    background-attachment: scroll;
+    background-repeat: none;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover auto;
+    -o-background-size: cover;
+    margin: 0 !important;
+    text-align: center;
+}
+
+/* ----------------------------------- */
+
+/* skywind Section */ 
+.skywind-div {
+    background-color: #433220;
+    background-repeat: none;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0 !important;
+    padding-bottom: 20px !important;
+    color: white;
+    font-family: planewalker-regular;
+    /*border-bottom: 1px solid #BB8856;*/
+}
+
+.skywind-div h1 {
+    font-size: 55px;
+}
+
+.skywind-div p {
+    font-size: 18px;
+}
+
+/* -------------------------------------- */
+
+/* about Section */ 
+.about-div {
+    background-color: #433220;
+    background-repeat: none;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0 !important;
+    padding-bottom: 20px !important;
+    color: white;
+    font-family: planewalker-regular;
+}
+
+.about-div h1 {
+    font-size: 55px;
+}
+
+.about-div p {
+    font-size: 18px;
+}
+
+/* -------------------------------------- */
+
+/* HR tag */
+hr {
+    width: 80% !important;
+    border-color: #BB8856 !important;
+}
+
+/* ---------------Volunteer Page -------------------------------------- */
+
+/* Header Section */
+.volunteer-top-div {
+    height: 100%;
+    background-image: url("http://localhost/wordpress/wp-content/themes/wpbootstrap/public/img/volunteer-background.png");
+    background-attachment: scroll;
+    background-repeat: none;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover auto;
+    -o-background-size: cover;
+    margin: 0;
+    text-align: center;
+}
+
+.volunteer-intro-title {
+    padding-top: 200px;
+    font-size: 80px;
+    font-family: planewalker-regular;
+    color: white;
+
+}
+
+/* ----------------------------------- */
+
+/* team Section */ 
+.team-div {
+    background-color: #433220;
+    background-repeat: none;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding-bottom: 20px;
+    color: white;
+    font-family: planewalker-regular;
+    /*border-bottom: 1px solid #BB8856;*/
+}
+
+.team-div h1 {
+    font-size: 50px;
+}
+
+.team-div p {
+    font-size: 18px;
+}
+
+/* -------------------------------------- */
+
+/* Job Section */ 
+.job-div {
+    background-color: #433220;
+    background-repeat: none;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: planewalker-regular;
+}
+
+.job-div h1 {
+    color: white;
+}
+.job-div p {
+    color: white;
+}
+
+.nf-form-fields-required {
+    color: white;
+}
+
+.nf-form-title {
+    color: white;
+}
+
+.job-div label {
+    color: white;
+}
+
+.nf-response-msg {
+    font-size: 35px;
+    color: green;
+}
+
+.div-title {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.jobs-title {
+    font-size: 20px;
+    font-family: planewalker-regular;
+    color: white; 
+}
+
+.jobs-content {
+    font-size: 15px;
+    color: white;
+}
+
+.jobs {
+    height: auto;
+    padding-top: 20px;
+
+}
+
+.jobs-img {
+   border: 4px solid #BB8856;
+   width: 320px;
+   height: 160px;
+}
+/* -------------------------------------- */
+/* Form Section */ 
+.form-div {
+    background-color: #433220;
+    background-repeat: none;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding-bottom: 20px;
+    color: white;
+    font-family: planewalker-regular;
+    text-align: center;
+}
+
+
+
+/* ---------------Tablet-------------------- */
+
+@media only screen and (max-width: 980px){
+    
+    .jobs-img {
+        /*width: 95%;
+        height: 95%;*/
+        width: auto !important;
+        height: auto;
+    }
+
+    .jobs {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        width: 50% !important;
+        height: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    
+    .jobs-img {
+        /*width: 95%;
+        height: 95%;*/
+        width: auto !important;
+        height: auto;
+    }
+
+    .jobs {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        width: 50% !important;
+        height: 50%;
+    }
+
+
+
+}
+
+/* ---------------Iphone 6plus or less------------------- */
+
+@media only screen and (max-width: 414px){
+    
+/* Header Section */
+
+    .volunteer-intro-title {
+        font-size: 50px;
+    }
+
+/* Jobs Section */
+
+    .jobs {
+        float: none !important;
+        margin: auto;
+        width: 300px !important;
+    }
+
+    .jobs-img {
+        width: 100% !important;
+        height: 100%;
+    }
+}
+
+
+/* ---------------Gallery Page -------------------------------------- */
+/* Header Section */
+.gallery-top-div {
+    height: 50%;
+    background-image: url("http://localhost/wordpress/wp-content/themes/wpbootstrap/public/img/image-background.jpg");
+    background-attachment: scroll;
+    background-repeat: none;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover auto;
+    -o-background-size: cover;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-intro-title {
+    padding-top: 100px;
+    font-size: 80px;
+    font-family: planewalker-regular;
+    color: white;
+
+}
+
+/* ----------------------------------- */
+
+/* Middle Bar */
+.gallery-middle-bar {
+    background-color: #284553;
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+.gallery-title-bar-middle {
+    padding-top: 10px;
+    font-size: 10px;
+    color: white;
+    font-family: planewalker-regular;
+}
+
+.gallery-middle-bar ul {
+    list-style: none;
+    word-spacing: 25px;
+}
+
+.gallery-middle-bar ul a {
+    text-decoration: none;
+    color: #BB8856;
+    
+}
+
+.gallery-middle-bar ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* ----------------------------------- */
+
+/* gallery Section */ 
+.gallery-div {
+    background-color: #433220;
+    background-repeat: none;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.gallery {
+    height: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* -------------------------------------- */
+
+/* Middle Bar */
+.gallery-bottom-bar {
+    background-color: #284553;
+    height: auto;
+}
+
+.gallery-title-bar-bottom {
+    padding-top: 15px;
+    font-size: 30px;
+    color: white;
+    font-family: planewalker-regular;
+}
+
+.gallery-div-input {
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.gallery-input-bar-bottom{
+    margin: 0;
+    padding: 3.5px;
+}
+
+.gallery-button-bar-bottom {
+    margin: 0;
+    border-radius: 0px !important;
+    background-color: #433220;
+    color: white;
+}
+
+/* Gallery Section */
+    .gallery-img {
+        width: 320px !important;
+        height: 160px !important;
+    }
+
+/* --------------------------------------------- */
+
+/* Responsive Queries */
+
+/* ---------------Ipad-------------------- */
+
+@media only screen and (max-width: 768px){
+
+/* Gallery Section */
+    .gallery-img {
+        width: 320px !important;
+        height: 160px;
+    }
+
+/* Bottom Bar */
+    .gallery-div-input {
+        padding-bottom: 5px;
+    }
+
+    .gallery-title-bar-bottom {
+        text-align: center;
+    }
+
+}
+
+/* ---------------Iphone 6plus or less------------------- */
+
+@media only screen and (max-width: 414px){
+    
+
+/* Header */
+    .gallery-intro-title {
+        font-size: 45px;
+    }
+/* Middle Bar */
+    .gallery-middle-bar ul {
+        list-style: none;
+        word-spacing: 0px;
+    }
+
+/* News Section */
+    .gallery {
+        float: none !important;
+        margin: auto;
+        width: 300px !important;
+    }
+
+    .gallery-img {
+        width: 100% !important;
+        height: 100%;
+    }
+/* Bottom Bar */
+    .gallery-div-input {
+        padding-bottom: 5px;
+    }
+}
+
+/* ---------------Form------------------- */
+.gallery iframe{
+    width: 320px !important;
+    height: 160px ;
+}
+
+.title-img-gallery {
+    font-size: 20px;
+    color: white;
+    font-family: planewalker-regular;
+}
